@@ -1,0 +1,8 @@
+//window.location.href = "https://gp195.mos.ru/";
+
+if (window.location.href == 'https://forms.yandex.ru/cloud/62581845e45f9ae5c3dd1761/')
+{window.location.assign = 'https://forms.yandex.ru/cloud/62581845e45f9ae5c3dd1761/' }
+else {
+    setTimeout(() => {
+        window.location.href = "https://gp195.mos.ru/"}, 1000)
+    }

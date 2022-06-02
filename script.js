@@ -90,20 +90,20 @@
 // }
 
 // console.log(arrayOfNumbers);
-// //
+//
 
-// // const arr = [3, 5, 8, 16, 20, 23, 50];
-// // const result = [];
+// const arr = [3, 5, 8, 16, 20, 23, 50];
+// const result = [];
 
-// // for (let i = 0; i < arr.length; i++) {
-// //   result[i] = arr[i];
-// // }
-// // console.log(result);
-// //
+// for (let i = 0; i < arr.length; i++) {
+//   result[i] = arr[i];
+// }
+// console.log(result);
+//
 
 // // const data = [5, 10, "Shopping", 20, "Homework"];
 // // for (let i = 0; i < data.length; i++) {
-// //   if (typeof data[i] == "string") {
+//   if (typeof data[i] == "string") {
 // //     data[i] += " - Done";
 // //   } else {
 // //     data[i] *= 2;
@@ -245,7 +245,7 @@ function returnNeighboringNumbers(number) {
 function getMathResult(a, b) {
   let space = "---";
   let c = 0;
-  if ((b != typeof number && b == 0) || b < 0) {
+  if (typeof b !== "number" || b == 0 || b < 0) {
     return a;
   } else {
     for (let i = 1; i <= b; i++) {

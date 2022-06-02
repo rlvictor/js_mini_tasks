@@ -252,6 +252,6 @@ function getMathResult(a, b) {
       c += a;
       console.log(c);
     }
-    return c;
+    return a + "---" + (a + a) + "---" + c;
   }
 }

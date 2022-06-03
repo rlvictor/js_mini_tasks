@@ -225,33 +225,34 @@ function pow(x, n) {
   }
   return result;
 }
+
 // стрелочная функция
 // let doMin = (a, b) => (a < b ? a : b);
 
 //lesson
-function sayHello(name) {
-  return console.log("Привет, " + name);
-}
+// function sayHello(name) {
+//   return console.log("Привет, " + name);
+// }
 
 //lesson
 
-function returnNeighboringNumbers(number) {
-  let a = [number - 1, number, number + 1];
-  return a;
-}
+// function returnNeighboringNumbers(number) {
+//   let a = [number - 1, number, number + 1];
+//   return a;
+// }
 
 //lesson
 
-function getMathResult(a, b) {
-  let space = "---";
-  let c = 0;
-  if (typeof b !== "number" || b == 0 || b < 0) {
-    return a;
-  } else {
-    for (let i = 1; i <= b; i++) {
-      c += a;
-      console.log(c);
-    }
-    return a + "---" + (a + a) + "---" + c;
-  }
-}
+// function getMathResult(a, b) {
+//   let result = "";
+//   if (typeof b !== "number" || b <= 0) {
+//     return a;
+//   } else {
+//     for (let i = 1; i <= b; i++) {
+//       if (i == b) {
+//         result += a * i;
+//       } else result += a * i + "---";
+//     }
+//     return result;
+//   }
+// }

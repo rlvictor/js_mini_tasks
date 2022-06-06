@@ -235,6 +235,54 @@
 //   }
 // } while (i < 2);
 
+// Объем и площадь куба
+
+function calculateVolumeAndArea(a) {
+  if (a % 1 !== 0 || a < 0 || typeof a !== "number") {
+    return "При вычислении произошла ошибка";
+  } else {
+    return (
+      "Объем куба: " + a * a * a + " , площадь всей поверхности: " + 6 * a * a
+    );
+  }
+}
+
+// Вычисление номера купе в вагоне
+
+function getCoupeNumber(a) {
+  if (typeof a !== "number" || a < 0 || a % 1 !== 0) {
+    return "Ошибка. Проверьте правильность введенного номера места.";
+  } else if (a == 0 || a > 36) {
+    return "Таких мест в вагоне не существует";
+  } else {
+    return (a = Math.ceil(a / 4));
+  }
+}
+
+// Часы и минуты
+
+function getTimeFromMinutes(a) {
+  let b = a;
+
+  if (a >= 60 && a < 120) {
+    b /= 60;
+    a %= 60;
+    return "Это " + Math.floor(b) + " час и " + a + " минут";
+  }
+  if (a >= 120 && a < 300) {
+    b /= 60;
+    a %= 60;
+    return "Это " + Math.floor(b) + " часа и " + a + " минут";
+  }
+  if (a < 60 || a >= 300) {
+    b /= 60;
+    a %= 60;
+    return "Это " + Math.floor(b) + " часов и " + a + " минут";
+  }
+}
+console.log(getTimeFromMinutes(90));
+//
+
 let numberOfFilms;
 
 function start() {

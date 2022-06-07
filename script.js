@@ -263,24 +263,61 @@ function getCoupeNumber(a) {
 
 function getTimeFromMinutes(a) {
   let b = a;
-
+  if (a < 0 || typeof a !== "number" || !Number.isInteger(a)) {
+    return `Ошибка, проверьте данные`;
+  }
   if (a >= 60 && a < 120) {
     b /= 60;
     a %= 60;
-    return "Это " + Math.floor(b) + " час и " + a + " минут";
+    return `Это ${Math.floor(b)} час и ${a} минут`;
   }
   if (a >= 120 && a < 300) {
     b /= 60;
     a %= 60;
-    return "Это " + Math.floor(b) + " часа и " + a + " минут";
+    return `Это ${Math.floor(b)} часа и ${a} минут`;
   }
   if (a < 60 || a >= 300) {
     b /= 60;
     a %= 60;
-    return "Это " + Math.floor(b) + " часов и " + a + " минут";
+    return `Это ${Math.floor(b)} часов и ${a} минут`;
   }
 }
-console.log(getTimeFromMinutes(90));
+//console.log(getTimeFromMinutes(90));
+//
+
+// 4 числа
+function findMaxNumber(a, b, c, d) {
+  if ((a, b, c, d == null || typeof (a, b, c, d) !== "number")) {
+    return 0;
+  } else {
+    return Math.max(a, b, c, d);
+  }
+}
+
+//
+//Фибоначчи
+
+function fib(n) {
+  if (typeof n !== "number" || n <= 0 || !Number.isInteger(n)) {
+    return "";
+  }
+  let result = "",
+    a = 0,
+    b = 1;
+  //result += `${a} `;
+  for (let i = 0; i < n; i++) {
+    if (i + 1 === n) {
+      result += `${a}`;
+    } else {
+      result += `${a} `;
+    }
+    let c = a + b;
+    a = b;
+    b = c;
+  }
+  return result;
+}
+
 //
 
 let numberOfFilms;

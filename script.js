@@ -1,52 +1,6 @@
 /*jshint esversion: 6*/
 // console.log("" && 6);
 
-//Mista ibug
-
-// for (let mistaIbug = 1; mistaIbug < 10; mistaIbug++) {
-//   setTimeout(function () {
-//     if (mistaIbug == 1) {
-//       mistaIbug = "Добрый день! Я mista ibuuug, и я тут главный!";
-//     } else if (mistaIbug == 4) {
-//       mistaIbug = "Я mista ibuuug, и я тут главный!";
-//     } else if (mistaIbug == 5) {
-//       mistaIbug = "Денис все у меня украл... опять... ";
-//     } else if (mistaIbug % 3 == 0) {
-//       mistaIbug = "Че ты?";
-//     } else if (mistaIbug % 2 !== 0) {
-//       mistaIbug = "Я mista ibuuug, и я тут главный!";
-//     } else if (mistaIbug % 2 == 0) {
-//       mistaIbug = "Денис все у меня украл... опять... ";
-//     }
-//     console.log(mistaIbug);
-//   }, 2000 * (mistaIbug + 1));
-// }
-// setTimeout(function () {
-//   console.log("p.s. Gorgal делает больше всех, старается...");
-// }, 22000);
-
-// let a = "Я mista ibuuug, и я тут главный!",
-//   b = "Денис все у меня украл... опять... ",
-//   c = "Че ты?";
-// for (let mistaIbug = 1; mistaIbug < 10; mistaIbug++) {
-//   setTimeout(function () {
-//     if (mistaIbug % 3 == 0) {
-//       mistaIbug = c;
-//     } else if (mistaIbug % 2 == 0 && mistaIbug !== 4) {
-//       mistaIbug = b;
-//     } else if (mistaIbug == 5) {
-//       mistaIbug = b;
-//     } else {
-//       mistaIbug = a;
-//     }
-
-//     console.log(mistaIbug);
-//   }, 1000 * (mistaIbug + 1));
-// }
-// setTimeout(function () {
-//   console.log("p.s. Gorgal делает больше всех, старается...");
-// }, 12000);
-
 // //Пирамидка
 
 // for (let i = "#"; i.length < 8; i += "#") {
@@ -144,7 +98,7 @@
 //'use strict';
 
 // for (let i = 0; i < 2; i++) {
-//   const a = prompt("Один из последних просмотренных филмов?", ""),
+//   const a = prompt("Один из последних просмотренных фильмов?", ""),
 //     b = prompt("На сколько оцените его?", "");
 
 //   if (a != null && b !== null && a != "" && b != "" && a.length < 50) {
@@ -160,7 +114,7 @@
 // while (i < 2) {
 //   i++;
 
-//   const a = prompt("Один из последних просмотренных филмов?", ""),
+//   const a = prompt("Один из последних просмотренных фильмов?", ""),
 //     b = prompt("На сколько оцените его?", "");
 //   if (a != null && b !== null && a != "" && b != "" && a.length < 50) {
 //     personalMovieDB.movies[a] = b;
@@ -224,7 +178,7 @@
 // let i = 0;
 // do {
 //   i++;
-//   const a = prompt("Один из последних просмотренных филмов?", ""),
+//   const a = prompt("Один из последних просмотренных фильмов?", ""),
 //     b = prompt("На сколько оцените его?", "");
 //   if (a != null && b !== null && a != "" && b != "" && a.length < 50) {
 //     personalMovieDB.movies[a] = b;
